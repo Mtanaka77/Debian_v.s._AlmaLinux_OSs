@@ -18,8 +18,16 @@ since the AlmaLinux-9 showed unnecessary errors without success.
 So, for the being, the import of ./lib/libscalapack.a was made from 
 the CentOS 7 code.
 
- 
+The arch.make file is the following: 
+FPPFLAGS = -DMPI
+LDFLAGS  = 
+INCFLAGS =
+INSDIR = /opt
 
+COMP_LIBS =     # libsiestaLAPACK.a libsiestaBLAS.a
+LDFLAGS += -L$(INSDIR)/openblas/lib -Wl,-rpath=$(INSDIR)/openblas/lib
+LIBS = -lgomp -L/opt/openblas/lib -lopenblas
+LIBS += -L/opt/scalapack/lib -lscalapack
 
 
 
