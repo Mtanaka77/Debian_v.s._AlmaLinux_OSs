@@ -46,10 +46,10 @@ The arch.make file is the following:
   LDFLAGS  = 
   INCFLAGS =
   INSDIR = /opt
-  COMP_LIBS =     # libsiestaLAPACK.a libsiestaBLAS.a
-  LDFLAGS += -L$(INSDIR)/openblas/lib -Wl,-rpath=$(INSDIR)/openblas/lib
-  LIBS = -lgomp -L/opt/openblas/lib -lopenblas
-  LIBS += -L/opt/scalapack/lib -lscalapack
+  COMP_LIBS =     # libsiestaLAPACK.a libsiestaBLAS.a  
+  LDFLAGS += -L$(INSDIR)/openblas/lib -Wl,-rpath=$(INSDIR)/openblas/lib  
+  LIBS = -lgomp -L/opt/openblas/lib -lopenblas  
+  LIBS += -L/opt/scalapack/lib -lscalapack  
 
 
 
