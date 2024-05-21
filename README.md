@@ -24,7 +24,7 @@ The arch.make file is the following:
   SIESTA_ARCH = gfortran-MPI  
 
   CC = mpicc  
-  FPP = $(FC) -E -P -x c
+  FPP = $(FC) -E -P -x c  
   FC = mpifort  
 
   MPI_INTERFACE = libmpi_f90.a  
