@@ -19,7 +19,29 @@ So, for the being, the import of ./lib/libscalapack.a was made from
 the CentOS 7 code.
 
 The arch.make file is the following:
+  .SUFFIXES:
+  .SUFFIXES: .f .F .o .c .a .f90 .F90
+  SIESTA_ARCH = gfortran-MPI
 
+  CC = mpicc   #gcc
+  FPP = $(FC) -E -P -x c
+  FC = mpifort #gfortran 
+
+  MPI_INTERFACE = libmpi_f90.a
+  MPI_INCLUDE = . 
+
+  FFLAGS = -O2 -fPIC -ftree-vectorize -march=native -fallow-argument-mismatch
+ #FFLAGS = -O2 -fexpensive-optimizations -ftree-vectorize -fprefetch-loop-arrays -march=native -fPIC -fopenmp
+  FC_SERIAL = gfortran
+
+  AR = ar
+  RANLIB = ranlib
+  SYS = nag
+
+  SP_KIND = 4
+  DP_KIND = 8
+  KINDS = $(SP_KIND) $(DP_KIND)
+  
   FPPFLAGS = -DMPI   
   LDFLAGS  = 
   INCFLAGS =
