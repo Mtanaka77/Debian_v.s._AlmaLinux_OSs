@@ -54,7 +54,7 @@ The arch.make file is the following:
   LIBS += -L/opt/scalapack/lib -lscalapack  
 
 The Siesta-4.1b was installed "make -i".
-The test is shown in Test file.
+The test is shown in the Siesta-4.1bTest.pdf file.
 
 
 
