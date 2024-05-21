@@ -9,6 +9,8 @@ of 10 GB memory, and was finished in 15 minutes for reboot.
 
 At the beginning, I opened the gfotran by # gfortran -V which
 was necessary on AlmaLinux-9. I also did # pip -V.
+The MPI mpich4 was downloaded and installed.
+
 
 Then, I downloaded the Siesta-4.1b code and did unpacking:  
 % tar -zxvf siesta-4.1b.tar.gz.
