@@ -55,7 +55,7 @@ The arch.make file is the following:
   LIBS = -lgomp -L/opt/openblas/lib -lopenblas  
   LIBS += -L/opt/scalapack/lib -lscalapack  
 
-The Siesta-4.1b was installed "make -i".
+The Siesta-4.1b was installed by "make -i" because the error stop was avoided.
 The test is shown in the Siesta-4.1bTest.pdf file.
 
 
