@@ -3,7 +3,7 @@
 ## Test Linux AlmaLinux-9 with Siesta-4.1b ##
 
 As the successor of CentOS 7, I downloaded the software AlmaLinux-9 
-on the laptop PC, and tested the linux for the Siesta-4.1b code.
+on the laptop PC, and tested the linux for the Siesta-4.1b code [1].
 The installation was all right with AlmaLinux-9.4-x86_64-dvd.iso
 of 10 GB memory, and was finished in 15 minutes for reboot.
 
@@ -59,6 +59,8 @@ The Siesta-4.1b was installed by "make -i" because the error stop was avoided.
 The test is shown in the Siesta-4.1bTest.pdf file.
 
 
+## References
 
+1. J. M. Soler et al., J. Phys. Cond. Matt. 14, 2745 (2002).
 
 
