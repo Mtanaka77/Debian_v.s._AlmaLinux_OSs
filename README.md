@@ -1,22 +1,24 @@
 # AlmaLinux-9 with Siesta-4.1b
 
-## Test AlmaLinux-9 with Siesta-4.1b ##
+## Test Linux AlmaLinux-9 with Siesta-4.1b ##
 
-I downloaded the software AlmaLinux-9 on the laptop and tested the code for
-the Siesta-4.1b code.
-As the successor of CentOS 7, the installation was all right with 10 GB of
-AlmaLinux-9.4-x86_64-dvd.iso, that was finished in 15 minutes for reboot.
+As the successor of CentOS 7, I downloaded the software AlmaLinux-9 
+on the laptop PC, and tested the linux for the Siesta-4.1b code.
+The installation was all right with AlmaLinux-9.4-x86_64-dvd.iso
+of 10 GB memory, and was finished in 15 minutes for reboot.
 
-At the beginning, I opened the gfotran by # gfortran -V, which was all right.
-I also did # pip -V.
+At the beginning, I opened the gfotran by # gfortran -V which
+was necessary on AlmaLinux-9. I also did # pip -V.
 
-Then, I downloaded the Siesta-4.1b and did % tar -zxvf siesta-4.1b.tar.gz.
+Then, I downloaded the Siesta-4.1b code and did unpacked:  
+% tar -zxvf siesta-4.1b.tar.gz.
 Before the Siesta code, it was necessary to install OpenBLAS and Scalapack.
 For OpenBLAS, it was straight forward after a while.
-For Scalapack, however, my installation went wrong as # make -i,
-since the AlmaLinux-9 showed unnecessary errors without success.
-So, for the being, the import of ./lib/libscalapack.a was made from 
-the CentOS 7 code.
+However, for Scalapack, my installation went wrong as # make -i,
+since VirtalBox is used where the AlmaLinux-9 showed unnecessary errors 
+without success.
+So for the being, the import of ./lib/libscalapack.a was made from 
+the CentOS 7.
 
 The arch.make file is the following:  
   .SUFFIXES:  
