@@ -18,7 +18,7 @@ since the AlmaLinux-9 showed unnecessary errors without success.
 So, for the being, the import of ./lib/libscalapack.a was made from 
 the CentOS 7 code.
 
-The arch.make file is the following:
+The arch.make file is the following:  
   .SUFFIXES:  
   .SUFFIXES: .f .F .o .c .a .f90 .F90  
   SIESTA_ARCH = gfortran-MPI  
