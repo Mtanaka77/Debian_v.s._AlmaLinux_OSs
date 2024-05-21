@@ -43,9 +43,9 @@ The arch.make file is the following:
   KINDS =  $(SP_KIND) $(DP_KIND)   
   
   FPPFLAGS = -DMPI   
-  LDFLAGS  = 
-  INCFLAGS =
-  INSDIR = /opt
+  LDFLAGS  =  
+  INCFLAGS =  
+  INSDIR = /opt  
   COMP_LIBS =     # libsiestaLAPACK.a libsiestaBLAS.a  
   LDFLAGS += -L$(INSDIR)/openblas/lib -Wl,-rpath=$(INSDIR)/openblas/lib  
   LIBS = -lgomp -L/opt/openblas/lib -lopenblas  
