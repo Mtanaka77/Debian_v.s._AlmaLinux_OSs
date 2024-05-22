@@ -44,7 +44,7 @@ The arch.make file for the MPI case mpifort is the following:
 
   SP_KIND = 4  
   DP_KIND = 8  
-  KINDS   = $( SP_KIND) $(DP_KIND)   
+  KINDS   = $(SP _ KIND) $(DP_KIND)   
   
   FPPFLAGS = -DMPI   
   LDFLAGS  =  
