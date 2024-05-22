@@ -44,7 +44,7 @@ The arch.make file for the MPI case mpifort is the following:
 
   SP_KIND = 4  
   DP_KIND = 8  
-  KINDS   = $(SP_KIND) $(DP_KIND)   
+  KINDS   = $( SP_KIND) $(DP_KIND)   
   
   FPPFLAGS = -DMPI   
   LDFLAGS  =  
@@ -63,4 +63,4 @@ The test is shown in the Siesta-4.1bTest.pdf file [2].
 
 1. J. M. Soler et al., J. Phys. Cond. Matt. 14, 2745 (2002).
 
-2. This PDF file of Siesta-4.1bTest.pdf. 
+2. This homepage PDF file of Siesta-4.1bTest.pdf. 
