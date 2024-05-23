@@ -18,7 +18,7 @@ At the first test, the three dimensional water molecule of
 The exec run for 6 cpu is executed by # mpiexec -n 6 a.out &, 
 which runs OK.
 
-Then for Siesta-4, we download the Siesta-4.1b code and unpack by:  
+Next as the main target, we download the Siesta-4.1b tarball and unpack by:  
 % tar -zxvf siesta-4.1b.tar.gz. Before working on the Siesta code, 
 it is necessary to install OpenBLAS and Scalapack.
 For OpenBLAS, it is straight forward after a while.
