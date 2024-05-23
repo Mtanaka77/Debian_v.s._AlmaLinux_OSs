@@ -1,6 +1,7 @@
 # AlmaLinux-9 with Siesta-4.1b
 
-## Test Linux - AlmaLinux-9, with Siesta-4.1b ##
+We have tested the linux operating system called AlmaLinux-9, which 
+runs in normal executions but except some errors as shown below.
 
 As the successor of CentOS 7, we download the software AlmaLinux-9 
 on the laptop PC, and test the linux for the Siesta-4.1b code [1].
