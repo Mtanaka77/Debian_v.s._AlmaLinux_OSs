@@ -69,9 +69,9 @@ The test is shown in the Siesta-4.1bTest.pdf just below [3].
 
 ## References
 
-1. M. Tanaka, and M. Sato, J. Chem. Physics, 126, 034509 (2007);
-M. Tanaka, Microwave heating of water and ice by TIP5P code,
-https://github.com/Mtanaka77/ (May 2023).
+1. M. Tanaka, and M. Sato, J. Chem. Physics, 126, 034509 (2007);  
+   M. Tanaka, Microwave heating of water and ice by TIP5P code,  
+   https://github.com/Mtanaka77/ (May 2023).
 
 2. J. M. Soler et al., J. Phys. Cond. Matt. 14, 2745 (2002).
 
