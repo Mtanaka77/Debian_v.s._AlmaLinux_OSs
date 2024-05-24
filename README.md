@@ -14,7 +14,8 @@ is necessary on AlmaLinux-9. We also type # pip -V to open PIP.
 The MPI of mpich4 is downloaded and installed for the Siesta-4.1 code.
 
 At the first test, the three dimensional ice and water molecules 
-@p3mtip5p03a.f03 is compiled with parm_tip5p_D07a.h, 1cx666a.exyz and 1cx666a.q. 
+@p3mtip5p03a.f03 is compiled with a parameter file parm_tip5p_D07a.h, 
+and structure files 1cx666a.exyz and 1cx666a.q. 
 The mpich-4 and fftw-3 packages must be installed before the compilation. 
 The exec run for 6 cpu with a start file TIP507_config.start0 is executed 
 by # mpiexec -n 6 a.out &, which runs all right.
