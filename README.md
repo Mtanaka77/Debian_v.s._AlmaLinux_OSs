@@ -1,4 +1,4 @@
-# AlmaLinux-9 with Siesta-4.1b
+# AlmaLinux-9 with Water-Ice MD and Siesta-4
 
 We have tested the linux operating system called AlmaLinux-9, which 
 runs well in normal operations except some errors as shown here.
