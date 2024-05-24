@@ -13,14 +13,15 @@ At the beginning, we open the gfotran by typing # gfortran -V, which
 is necessary on AlmaLinux-9. We also type # pip -V to open PIP.
 The MPI of mpich4 is downloaded and installed for the Siesta-4.1 code.
 
-At the first test, the three dimensional water molecule of
-@p3mtip5p03a.f03 is compiled with mpich-4 and fftw-3. 
+At the first test, the three dimensional ice and water molecules 
+@p3mtip5p03a.f03 is compiled where the mpich-4 and fftw-3 packages
+must be installed before. 
 The exec run for 6 cpu is executed by # mpiexec -n 6 a.out &, 
 which runs all right.
 
 Next at the second test, we download the Siesta-4.1b tarball and unpack by:  
 % tar -zxvf siesta-4.1b.tar.gz. Before working on the Siesta code, 
-it is necessary to install OpenBLAS and Scalapack.
+it is necessary to install the OpenBLAS and Scalapack packages.
 For OpenBLAS, it is straight forward after a while.
 However, for Scalapack, the installation went wrong although 
 we type # make -i, since VirtualBox was used for which 
