@@ -1,20 +1,20 @@
 # AlmaLinux-9 with Water-Ice MD and Siesta-4
 
-We have tested the linux operating system called AlmaLinux-9, which 
+We have tested the linux operating system called AlmaLinux, which 
 runs well in normal operations except some errors as shown below.
 
-As the successor of CentOS 7, we download the software AlmaLinux-9 
-on the laptop PC [1]. 
+As the successor of CentOS 7, we download the current software 
+AlmaLinux-9 on the laptop PC [1]. 
 The installation is done with AlmaLinux-9.4-x86_64-dvd.iso
-of 10 GB memory.  That is finished in 15 minutes and then reboot
-for Linux windows.
+of 10 GB memory.  That is finished in 15 minutes to reboot
+for the Linux windows.
 
 At the beginning, we open the gfotran by typing # gfortran -V, which
-is necessary on AlmaLinux-9. We also type # pip -V to open PIP.
-The MPI of mpich4 is downloaded and installed for the water_and_ice MD [2[
+is necessary on AlmaLinux-9. We also type # pip3 -V to open PIP.
+The MPI of mpich4 is downloaded and installed for the water and ice MD [2]
 and the quantum mechanics Siesta-4.1 code [3].
 
-At the first test, the three dimensional ice and water molecules 
+At the first test, the three-dimensional ice and water molecules 
 @p3mtip5p03a.f03 is compiled with a parameter file parm_tip5p_D07a.h, 
 and structure files 1cx666a.exyz and 1cx666a.q [2]. 
 The mpich-4 and fftw-3 packages must be installed before the compilation. 
@@ -25,8 +25,8 @@ The initial state of the water molecules is constructed in quaternions [4].
 The pips package is installed and is fine at usual linux systems including CentOS 7. 
 Also the Windows 11 system is ok using the C/C++ packages of Vidual Studio Community, 
 and then the pip3 package. 
-However, the AlmaLinux-9 fails due to one of the parilist package before the 
-installation of # pip3 install genice. 　
+However, the AlmaLinux-9 fails due to one of the packages parilist before  
+we install # pip3 install genice. 　
 
 
 Next at the second test, we download the Siesta-4.1b code [3] and unpack by:  
@@ -34,12 +34,13 @@ Next at the second test, we download the Siesta-4.1b code [3] and unpack by:
 it is necessary to install the OpenBLAS and Scalapack packages.
 For OpenBLAS, it is straight forward after a while.
 However, for Scalapack, the installation went wrong although 
-we type # make -i, since VirtualBox was used for which 
-the AlmaLinux-9 showed unnecessary errors without success.
-So for the being, the import of ./lib/libscalapack.a is borrowed from 
-the fading away CentOS 7.
+we typed # make -i, since VirtualBox settings of AlmaLinux-9 showed 
+unnecessary errors without success.
+So for the rescue, the import of ./lib/libscalapack.a is borrowed from 
+the fading CentOS 7.
 
-The arch.make file for the MPI case mpifort is the following:  
+The arch.make file for the MPI case mpifort is the following (the upper half
+of the arch.make):  
   .SUFFIXES:  
   .SUFFIXES: .f .F .o .c .a .f90 .F90  
   SIESTA_ARCH = gfortran-MPI  
