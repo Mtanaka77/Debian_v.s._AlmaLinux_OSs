@@ -4,23 +4,24 @@ We have tested the linux operating system called AlmaLinux-9, which
 runs well in normal operations except some errors as shown below.
 
 As the successor of CentOS 7, we download the software AlmaLinux-9 
-on the laptop PC. 
+on the laptop PC [1]. 
 The installation is done with AlmaLinux-9.4-x86_64-dvd.iso
 of 10 GB memory.  That is finished in 15 minutes and then reboot
 for Linux windows.
 
 At the beginning, we open the gfotran by typing # gfortran -V, which
 is necessary on AlmaLinux-9. We also type # pip -V to open PIP.
-The MPI of mpich4 is downloaded and installed for the Siesta-4.1 code.
+The MPI of mpich4 is downloaded and installed for the water_and_ice MD [2[
+and the quantum mechanics Siesta-4.1 code [3].
 
 At the first test, the three dimensional ice and water molecules 
 @p3mtip5p03a.f03 is compiled with a parameter file parm_tip5p_D07a.h, 
-and structure files 1cx666a.exyz and 1cx666a.q [1]. 
+and structure files 1cx666a.exyz and 1cx666a.q [2]. 
 The mpich-4 and fftw-3 packages must be installed before the compilation. 
 The exec run for 6 cpu with a start file TIP507_config.start0 is executed 
 by # mpiexec -n 6 a.out &, which runs all right.
 
-The initial state of the water molecules is constructed in quaternions [2]. 
+The initial state of the water molecules is constructed in quaternions [4]. 
 The pips package is installed and is fine at usual linux systems including CentOS 7. 
 Also the Windows 11 system is ok using the C/C++ packages of Vidual Studio Community, 
 and then the pip3 package. 
@@ -77,12 +78,14 @@ The test is shown in the Siesta-4.1bTest.pdf [4].
 
 ## References
 
-1. M. Tanaka, and M. Sato, J. Chem. Physics, 126, 034509 (2007);  
+1. AlmaLinux OS, https://almalinux.org/.
+
+2. M. Tanaka, and M. Sato, J. Chem. Physics, 126, 034509 (2007);  
    M. Tanaka, Microwave heating of water and ice by TIP5P code,  
    https://github.com/Mtanaka77/ (May 2023).
 
-2. M. Matsumoto, https://github.com/vitroid/GenIce.
-
 3. J. M. Soler et al., J. Phys. Cond. Matt. 14, 2745 (2002).
 
-4. This homepage PDF file of Siesta-4.1bTest.pdf. 
+4. M. Matsumoto, https://github.com/vitroid/GenIce.
+
+5. This homepage PDF file of Siesta-4.1bTest.pdf. 
