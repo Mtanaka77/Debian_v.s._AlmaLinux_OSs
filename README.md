@@ -73,7 +73,7 @@ The arch.make file for the MPI case mpifort is the following:
   LIBS += -L/opt/scalapack/lib -lscalapack  
 
 The Siesta-4.1b is installed by "make -i" because the error stop is avoided.
-The test is shown in the Siesta-4.1bTest.pdf [4].
+The test is shown in the Siesta-4.1bTest.pdf [5].
 
 
 ## References
