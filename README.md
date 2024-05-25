@@ -1,7 +1,7 @@
 # AlmaLinux-9 with Water-Ice MD and Siesta-4
 
 We have tested the linux operating system called AlmaLinux-9, which 
-runs well in normal operations except some errors as shown here.
+runs well in normal operations except some errors as shown below.
 
 As the successor of CentOS 7, we download the software AlmaLinux-9 
 on the laptop PC. 
@@ -20,10 +20,15 @@ The mpich-4 and fftw-3 packages must be installed before the compilation.
 The exec run for 6 cpu with a start file TIP507_config.start0 is executed 
 by # mpiexec -n 6 a.out &, which runs all right.
 
-The initial state of the water molecules is constructed in quaternions [4]. The pips package is installed and is fine at usual linux systems including CentOS 7. Also the Windows 11 system is ok using the C/C++ packages of Vidual Studio Community, and then the pip3 package. However, the AlmaLinux-9 fails due to one of the parilist package before the installation of # pip3 install genice. 　
+The initial state of the water molecules is constructed in quaternions [2]. 
+The pips package is installed and is fine at usual linux systems including CentOS 7. 
+Also the Windows 11 system is ok using the C/C++ packages of Vidual Studio Community, 
+and then the pip3 package. 
+However, the AlmaLinux-9 fails due to one of the parilist package before the 
+installation of # pip3 install genice. 　
 
 
-Next at the second test, we download the Siesta-4.1b code [2] and unpack by:  
+Next at the second test, we download the Siesta-4.1b code [3] and unpack by:  
 % tar -zxvf siesta-4.1b.tar.gz. Before working on the Siesta code, 
 it is necessary to install the OpenBLAS and Scalapack packages.
 For OpenBLAS, it is straight forward after a while.
@@ -67,7 +72,7 @@ The arch.make file for the MPI case mpifort is the following:
   LIBS += -L/opt/scalapack/lib -lscalapack  
 
 The Siesta-4.1b is installed by "make -i" because the error stop is avoided.
-The test is shown in the Siesta-4.1bTest.pdf just below [3].
+The test is shown in the Siesta-4.1bTest.pdf [4].
 
 
 ## References
@@ -76,6 +81,8 @@ The test is shown in the Siesta-4.1bTest.pdf just below [3].
    M. Tanaka, Microwave heating of water and ice by TIP5P code,  
    https://github.com/Mtanaka77/ (May 2023).
 
-2. J. M. Soler et al., J. Phys. Cond. Matt. 14, 2745 (2002).
+2. M. Matsumoto, https://github.com/vitroid/GenIce.
 
-3. This homepage PDF file of Siesta-4.1bTest.pdf. 
+3. J. M. Soler et al., J. Phys. Cond. Matt. 14, 2745 (2002).
+
+4. This homepage PDF file of Siesta-4.1bTest.pdf. 
