@@ -20,6 +20,9 @@ The mpich-4 and fftw-3 packages must be installed before the compilation.
 The exec run for 6 cpu with a start file TIP507_config.start0 is executed 
 by # mpiexec -n 6 a.out &, which runs all right.
 
+The initial state of the water molecules is constructed in quaternions [4]. The pips package is installed and is fine at usual linux systems including CentOS 7. Also the Windows 11 system is ok using the C/C++ packages of Vidual Studio Community, and then the pip3 package. However, the AlmaLinux-9 fails due to one of the parilist package before the installation of # pip3 install genice. 　
+
+
 Next at the second test, we download the Siesta-4.1b code [2] and unpack by:  
 % tar -zxvf siesta-4.1b.tar.gz. Before working on the Siesta code, 
 it is necessary to install the OpenBLAS and Scalapack packages.
