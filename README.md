@@ -21,12 +21,11 @@ The mpich-4 and fftw-3 packages must be installed before the compilation.
 The exec run for 6 cpu with a start file TIP507_config.start0 is executed 
 by # mpiexec -n 6 a.out &, which runs all right.
 
-The initial state of the water molecules is constructed in quaternions [4]. 
+The initial settings of the water molecules is constructed in quaternions [4]. 
 The pips package is installed and is fine at usual linux systems including CentOS 7. 
 Also the Windows 11 system is ok using the C/C++ packages of Vidual Studio Community, 
-and then the pip3 package. 
-However, the AlmaLinux-9 fails due to one of the packages parilist before  
-we install # pip3 install genice. 　
+and then the pip3 package. However, the AlmaLinux-9 fails due to one of the packages 
+parilist before we install # pip3 install genice. 　
 
 
 Next at the second test, we download the Siesta-4.1b code [3] and unpack by:  
@@ -35,9 +34,8 @@ it is necessary to install the OpenBLAS and Scalapack packages.
 For OpenBLAS, it is straight forward after a while.
 However, for Scalapack, the installation went wrong although 
 we typed # make -i, since VirtualBox settings of AlmaLinux-9 showed 
-unnecessary errors without success.
-So for the rescue, the import of ./lib/libscalapack.a is borrowed from 
-the fading CentOS 7.
+unnecessary errors without success. So for the rescue, the import of 
+./lib/libscalapack.a is borrowed from the fading CentOS 7.
 
 The arch.make file for the MPI case mpifort is the following (the upper half
 of the arch.make):  
