@@ -3,11 +3,10 @@
 We have tested the linux operating system that is AlmaLinux. 
 It runs well in normal operations except for some errors as shown below.
 
-As the successor of CentOS 7, we are using the current software 
-AlmaLinux-9 on the laptop PC [1]. 
-The installation is done with AlmaLinux-9.4-x86_64-dvd.iso
-of 10 GB memory.  That is finished in 15 minutes to reboot
-the Linux windows.
+For the successor of terminated CentOS 7, we have downloaded the
+AlmaLinux on the laptop PC. The OS installation has been done in
+AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. That is finished
+in 15 minutes which is then rebooted for new Linux windows.
 
 At the beginning, we open the gfotran by typing # gfortran -V, which
 is necessary on AlmaLinux-9. We also type # pip3 -V to open PIP.
