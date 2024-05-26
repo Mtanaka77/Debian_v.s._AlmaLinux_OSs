@@ -1,13 +1,13 @@
 # AlmaLinux-9 with Water-Ice MD and Siesta-4
 
-We have tested the linux operating system called AlmaLinux, which 
-runs well in normal operations except some errors as shown below.
+We have tested the linux operating system that is AlmaLinux. 
+It runs well in normal operations except for some errors as shown below.
 
-As the successor of CentOS 7, we download the current software 
+As the successor of CentOS 7, we are using the current software 
 AlmaLinux-9 on the laptop PC [1]. 
 The installation is done with AlmaLinux-9.4-x86_64-dvd.iso
 of 10 GB memory.  That is finished in 15 minutes to reboot
-for the Linux windows.
+the Linux windows.
 
 At the beginning, we open the gfotran by typing # gfortran -V, which
 is necessary on AlmaLinux-9. We also type # pip3 -V to open PIP.
