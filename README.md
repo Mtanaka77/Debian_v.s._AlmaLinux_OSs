@@ -3,15 +3,16 @@
 We have tested the linux operating system that is AlmaLinux. 
 It runs well in normal operations except for some errors as shown below.
 
-For the successor of terminated CentOS 7, we have downloaded the
-AlmaLinux on the laptop PC. The OS installation has been done in
+For the successor of terminated CentOS 7, we download the
+AlmaLinux on the laptop PC. The OS installation is done in
 AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. That is finished
-in 15 minutes which is then rebooted for new Linux windows.
+in 15 minutes which is rebooted for new Linux windows.
 
-At the beginning, we open the gfotran by typing # gfortran -V, which
-is necessary on AlmaLinux-9. We also type # pip3 -V to open PIP.
+At the first time, we open the gfotran (Fortran) by typing 
+# gfortran -V, which is necessary on AlmaLinux-9. 
+We also type # pip3 -V to open the python3-pip software.
 The MPI of mpich4 is downloaded and installed for the water and ice MD [2]
-and the quantum mechanics Siesta-4.1 code [3].
+and the ab-initio Siesta-4.1 code [3].
 
 At the first test, the three-dimensional ice and water molecules 
 @p3mtip5p03a.f03 is compiled with a parameter file parm_tip5p_D07a.h, 
