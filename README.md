@@ -8,8 +8,8 @@ AlmaLinux on the laptop PC. The OS installation is done in
 AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. That is finished
 in 15 minutes which is rebooted for new Linux windows.
 
-At the first time, we open the gfotran (Fortran) by typing 
-# gfortran -V, which is necessary on AlmaLinux-9. 
+At the first time, we open the gfotran (Fortran) by typing # gfortran -V, 
+which is necessary on AlmaLinux-9. 
 We also type # pip3 -V to open the python3-pip software.
 The MPI of mpich4 is downloaded and installed for the water and ice MD [2]
 and the ab-initio Siesta-4.1 code [3].
