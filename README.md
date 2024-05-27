@@ -25,7 +25,7 @@ The initial state of the water or ice molecules is constructed in quaternions [4
 The pips package is installed which is at usual linux systems including CentOS 7. 
 Also, the Windows 11 system at GitBash is fine using the C/C++ packages of Vidual Studio Community, 
 and then the related pip3 packages. However, the AlmaLinux-9 fails due to one of the packages 
-called parilist before we install # pip3 install genice. 　
+called pairlist before we should install # pip3 install genice. 　
 
 
 Next at the second test, we download the Siesta-4.1b code [3] and unpack by:  
