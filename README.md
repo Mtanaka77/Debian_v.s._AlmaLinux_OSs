@@ -18,8 +18,8 @@ At the first test, the three-dimensional ice and water molecules
 @p3mtip5p03a.f03 is compiled with a parameter file parm_tip5p_D07a.h, 
 and structure files 1cx666a.exyz and 1cx666a.q [2]. 
 The mpich-4 and fftw-3 packages must be installed before the compilation. 
-The exec run for 6 cpu with a start file TIP507_config.start0 is executed 
-by # mpiexec -n 6 a.out &, which runs all right.
+The exec run for 6 cpu at least with a start file TIP507_config.start0 
+is executed by # mpiexec -n 6 a.out &, which runs all right.
 
 The initial settings of the water molecules is constructed in quaternions [4]. 
 The pips package is installed and is fine at usual linux systems including CentOS 7. 
