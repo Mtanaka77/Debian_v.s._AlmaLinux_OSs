@@ -1,4 +1,4 @@
-# AlmaLinux on Water-Ice MD and quantum mechanics Siesta-4
+# AlmaLinux on Water-Ice MD and ab-initio Siesta-4
 
 We have tested the linux operating system that is AlmaLinux. 
 It runs well in normal operations except for some errors as shown below.
