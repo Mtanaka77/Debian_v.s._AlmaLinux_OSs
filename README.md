@@ -21,11 +21,12 @@ The mpich-4 and fftw-3 packages must be installed before the compilation.
 The exec run for 6 cpu at least with a start file TIP507_config.start0 
 is executed by # mpiexec -n 6 a.out &, which runs all right.
 
-The initial state of the water or ice molecules is constructed in quaternions [4]. 
-The pips package is installed which is at usual linux systems including CentOS 7. 
+The initial state of the water and ice molecules is constructed in quaternions [4]. 
+The pips package is installed at usual linux systems including CentOS 7. 
 Also, the Windows 11 system at GitBash is fine using the C/C++ packages of Vidual Studio Community, 
-and then the related pip3 packages. However, the AlmaLinux-9 fails due to one of the packages 
-called pairlist before we should install # pip3 install genice. 　
+and then the related pip3 packages. 
+However, the AlmaLinux-9 shows errors at one of the packages called pairlist 
+before we should install # pip3 install genice. 　
 
 
 Next at the second test, we download the Siesta-4.1b code [3] and unpack by:  
