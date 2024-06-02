@@ -23,9 +23,9 @@ is executed by # mpiexec -n 6 a.out &, which runs all right.
 
 The initial state of the water and ice molecules is constructed in quaternions [4]. 
 The pips package is installed at usual linux systems including CentOS 7. 
-Also, the Windows 11 system at GitBash is fine using the C/C++ packages of Vidual Studio Community, 
-and then the related pip3 packages. 
-However, the AlmaLinux-9 shows strange errors at one of the packages called pairlist 
+Also, the Windows 11 system at GitBash is fine using the C/C++ packages of 
+Vidual Studio Community, and then the related pip3 packages. 
+However, the AlmaLinux-9 shows strange errors at one of the packages of pairlist 
 before we should install # pip3 install genice. 　
 
 
