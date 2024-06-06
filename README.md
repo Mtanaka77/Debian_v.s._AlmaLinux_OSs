@@ -14,7 +14,7 @@ We also type # pip3 -V to open the python3-pip software.
 The MPI of mpich4 is downloaded and installed for the water and ice MD [2]
 and the ab-initio Siesta-4.1 code [3].
 
-## Classic MD ##
+### Classic MD ###
 
 At the first test, the three-dimensional ice and water molecules 
 @p3mtip5p03a.f03 is compiled with a parameter file parm_tip5p_D07a.h, 
@@ -30,7 +30,7 @@ Vidual Studio Community, and then the related pip3 packages.
 However, the AlmaLinux-9 shows strange errors at one of the packages of pairlist 
 before we should install # pip3 install genice. 　
 
-## Ab-initio Siesta ##
+### Ab-initio Siesta ###
 
 Next at the second test, we download the Siesta-4.1b code [3] and unpack by:  
 % tar -zxvf siesta-4.1b.tar.gz. Before working on the Siesta code, 
