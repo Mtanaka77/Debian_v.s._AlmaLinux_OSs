@@ -7,11 +7,12 @@ For the successor of CentOS 7 that is terminated in May 2024, we download the
 AlmaLinux on the laptop PC. The OS is AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. 
 The actual installation time is about 15 minutes which is rebooted for new Linux windows.
 
-At the first time, we open the gfotran (Fortran) by typing # gfortran -V, 
+At the first time, we open the gcc-gfotran (Fortran) by typing # gfortran -V, 
 which is necessary on AlmaLinux-9. 
 We also type # pip3 -V to open the python3-pip software.
-The MPI of mpich4 is downloaded and installed for the water and ice MD [2]
-and the ab-initio Siesta-4.1 code [3].
+The MPI of mpich-4 is downloaded from the source site and installed, and
+the classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] are tested
+for AlmaLinux.
 
 ### Classic MD ###
 
