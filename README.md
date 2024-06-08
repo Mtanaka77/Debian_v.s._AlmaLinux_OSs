@@ -1,9 +1,9 @@
 ## AlmaLinux on Water-Ice MD and Ab-initio Siesta4
 
-We have tested the linux operating system that is AlmaLinux. 
+We have tested the linux operating system, AlmaLinux-9. 
 It runs well in normal operations except for some errors as shown below.
 
-For the successor of CentOS 7 terminated in May 2024, we download the
+For the successor of CentOS 7 that is terminated in May 2024, we download the
 AlmaLinux on the laptop PC. The OS installation is done in
 AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. That is finished
 in 15 minutes which is rebooted for new Linux windows.
