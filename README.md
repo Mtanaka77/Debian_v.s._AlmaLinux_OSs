@@ -5,7 +5,7 @@ It runs well in normal operations except for some errors as shown below.
 
 For the successor of CentOS 7 that is terminated in May 2024, we download the
 AlmaLinux on the laptop PC. The OS is AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. 
-The actual installation time is finished in 15 minutes which is rebooted for new Linux windows.
+The actual installation time is about 15 minutes which is rebooted for new Linux windows.
 
 At the first time, we open the gfotran (Fortran) by typing # gfortran -V, 
 which is necessary on AlmaLinux-9. 
