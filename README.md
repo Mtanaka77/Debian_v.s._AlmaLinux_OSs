@@ -1,4 +1,4 @@
-## AlmaLinux on Water-Ice MD and Ab-initio Siesta4
+## AlmaLinux on Water-Ice MD and Ab-initio Siesta Codes
 
 We have tested the linux operating system, AlmaLinux-9. 
 It runs well in normal operations except for some errors as shown below.
