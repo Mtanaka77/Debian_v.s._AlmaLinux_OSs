@@ -6,7 +6,9 @@ Debian is success as shown below.
 
 For the successor of CentOS 7 that is terminated in May 2024, we download the
 AlmaLinux on the laptop PC. The OS is AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. 
-The actual installation time is about 15 minutes which is rebooted for new Linux windows.
+The actual installation time is about 15 minutes which is rebooted for new Linux windows
+Debian 12 is installed, with softwares added such as gcc, make and mpich.
+Also, the 1500 softwares are installed as initial update.  
 
 At the first time, we open the gcc-gfotran (Fortran) by typing # gfortran -V, 
 which is necessary on AlmaLinux-9. 
