@@ -1,7 +1,8 @@
-## AlmaLinux on Water-Ice MD and Ab-initio Siesta Codes
+## AlmaLinux vs Debian on Water-Ice MD and Ab-initio Siesta Codes
 
-We have tested the linux operating system, AlmaLinux-9. 
-It runs well in normal operations except for some errors as shown below.
+We have tested the linux operating system, AlmaLinux-9 and Debian-12. 
+They run well in normal operations, but some errors in AlmaLinux while
+Debian is success as shown below.
 
 For the successor of CentOS 7 that is terminated in May 2024, we download the
 AlmaLinux on the laptop PC. The OS is AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. 
