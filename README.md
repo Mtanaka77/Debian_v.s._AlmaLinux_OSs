@@ -42,10 +42,13 @@ Next at the second test, we download the Siesta-4.1b code [3] and unpack by:
 % tar -zxvf siesta-4.1b.tar.gz. Before working on the Siesta code, 
 it is necessary to install the OpenBLAS and Scalapack packages.
 For OpenBLAS, it is straight forward after a while.
-However, for Scalapack, the installation went wrong although 
-we typed # make -i, since VirtualBox settings of AlmaLinux-9 showed 
-unnecessary errors without success. So for the rescue, the import of 
-./lib/libscalapack.a is borrowed from the fading CentOS 7.
+
+However, for Scalapack, the installation must go a different way than CentOS.
+scalapach-2.2.0 is downloaded and expanded. At the BLACS/SRC directory, 
+one does $ make, and mpif90 is done automatically.
+The same for PBLACS/SRC, but for SRC, one must give -fallow-argument-mismatch
+at Makefile's $(FC) line, and type $ make -k.
+The TOOLS is just $ make.
 
 The arch.make file for the MPI case mpifort is the following (the upper half
 of the arch.make):  
