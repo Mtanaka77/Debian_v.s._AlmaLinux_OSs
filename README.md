@@ -1,6 +1,6 @@
 ## AlmaLinux vs Debian on Water-Ice MD and Ab-initio Siesta Codes
 
-We have tested the linux operating system, AlmaLinux-9 and Debian-12. 
+We have tested the linux operating systems, AlmaLinux-9 and Debian-12. 
 They run well in normal operations, but some errors in AlmaLinux while
 Debian is success as shown below.
 
@@ -14,10 +14,10 @@ The MPI of mpich-4 is downloaded from the source site and installed.
 
 Debian 12 OS is installed, with choice softwares added such as gcc, make, mpich
 and fftw3. The 1500 softwares are installed at initial update. Softwares for Debian OS 
-are added one by one if they are necessary; they are simply
-named of labels (gcc instead of gcc-12-... in AlmaLinux).
+are added one by one if they are necessary; they are simply named of labels 
+(gcc instead of gcc-12-... in AlmaLinux).
 The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] are tested
-for AlmaLinux.
+for AlmaLinux and Debian.
 
 ### Classic MD ###
 
