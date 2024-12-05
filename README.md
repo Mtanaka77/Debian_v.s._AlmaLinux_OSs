@@ -26,16 +26,18 @@ At the first test, the three-dimensional ice and water molecules
 and structure files 1cx666a.exyz and 1cx666a.q [2]. 
 The mpich-4 and fftw-3 packages must be installed before the compilation. 
 The exec run for 6 cpu at least with a start file TIP507_config.start0 
-is executed by # mpiexec -n 6 a.out &, which runs all right.
+is executed by # mpiexec -n 6 a.out &, which runs all right for AlmaLinux
+and Debian operating systems.
 
 The initial state of the water and ice molecules is constructed in quaternions [4]. 
 The pip and pip3 packages are installed as usual linux systems, including for CentOS 7 
 and Debian operating systems. 
 
-On the other hand, the Windows 11 system needs GitBash using the C/C++ packages of 
-Vidual Studio Community, and then the related pip3 packages. 
+On the other hand, the Windows 11 system of AlmaLinux needs GitBash using the 
+C/C++ packages of Vidual Studio Community, and then the related pip3 packages. 
 However, the AlmaLinux-9 shows strange errors at one of the packages of pairlist 
-before we should install # pip3 install genice. 　
+before we should install # pip3 install genice. 
+On the other hand, Debian-12 has no difficulty in compiling "pip3 install genice".
 
 ### Ab-initio Siesta ###
 
