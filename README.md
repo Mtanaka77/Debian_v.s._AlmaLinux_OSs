@@ -49,6 +49,7 @@ one must type $ make (no option), and mpif90 is done automatically.
 The same for PBLACS/SRC, but for SRC, one must give -fallow-argument-mismatch
 at Makefile's $(FC) line, and type $ make -k. The TOOLS directory is typed 
 just like $ make. It will be 10.7 MB for the latest libscalapack.a.
+*) Tested by Debian 12 OS
 
 The arch.make file for the MPI case mpifort is the following (the upper half
 of the arch.make):  
