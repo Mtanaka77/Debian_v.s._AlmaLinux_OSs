@@ -36,29 +36,29 @@ and Debian operating systems.
 On the other hand, the Windows 11 system of AlmaLinux needs GitBash using the 
 C/C++ packages of Vidual Studio Community, and then the related pip3 packages. 
 However, the AlmaLinux-9 shows strange errors at one of the packages of pairlist 
-before we should install # pip3 install genice. 
+before we should install "pip3 install genice". 
 On the other hand, Debian-12 has no difficulty in compiling "pip3 install genice".
 
 ### Ab-initio Siesta ###
 
-Next at the second test, we download the Siesta-4.1b code [3] and unpack by:  
-% tar -zxvf siesta-4.1b.tar.gz. Before working on the Siesta code, 
+Next at the third test, we download the Siesta-4.1b code [3] and unpack by  
+"tar -zxvf siesta-4.1b.tar.gz". Before working on the Siesta code, 
 it is necessary to install the OpenBLAS and Scalapack packages.
 For OpenBLAS, it is straight forward after a while.
 
 However, the installation of Scalapack must go in a different way than CentOS.
 The scalapach-2.2.0 file is downloaded and expanded. At the BLACS/SRC directory, 
-one must type $ make (no option), and mpif90 is done automatically.
-The same for PBLACS/SRC, but for SRC, one must give -fallow-argument-mismatch
-at Makefile's $(FC) line, and type $ make -k. The TOOLS directory is typed 
-just like $ make. It will be 10.7 MB for the latest libscalapack.a.
-*) Tested by Debian 12 OS
+one must type $ make (no option), and mpif90 is done automatically to make 
+a part of libscalapack.a. The same is done for PBLACS/SRC, but for SRC, 
+one must give -fallow-argument-mismatch at the Makefile's $(FC) line, and 
+type $ make -k. The TOOLS directory is typed just like $ make. It will be 10.7 MB 
+for the latest libscalapack.a. *) Tested by Debian 12 OS
 
-The arch.make file for the MPI case mpifort is the following (the upper half
+The arch.make file and mpifort for the MPI and OMP case is the following (the upper half
 of the arch.make):  
   .SUFFIXES:  
   .SUFFIXES: .f .F .o .c .a .f90 .F90  
-  SIESTA_ARCH = gfortran-MPI  
+  SIESTA_ARCH = gfortran-MPI-OMP  
 
   CC = mpicc  
   FPP = $(FC) -E -P -x c  
@@ -67,8 +67,8 @@ of the arch.make):
   MPI_INTERFACE = libmpi_f90.a  
   MPI_INCLUDE = .   
 
-  FFLAGS = -O2 -fPIC -ftree-vectorize -march=native -fallow-argument-mismatch  
- #FFLAGS = -O2 -fexpensive-optimizations -ftree-vectorize -fprefetch-loop-arrays -march=native -fPIC -fopenmp  
+  FFLAGS = -O2 -fPIE -ftree-vectorize -fprefetch-loop-arrays -march=native \
+  -fallow-argument-mismatch -fopenmp  
   FC_SERIAL = gfortran  
 
   AR = ar  
@@ -86,10 +86,10 @@ of the arch.make):
   COMP_LIBS =     # libsiestaLAPACK.a libsiestaBLAS.a  
   LDFLAGS += -L$(INSDIR)/openblas/lib -Wl,-rpath=$(INSDIR)/openblas/lib  
   LIBS = -lgomp -L/opt/openblas/lib -lopenblas  
-  LIBS += -L/opt/scalapack/lib -lscalapack  
+  LIBS += /opt/scalapack/lib/libscalapack.a  
 
-The Siesta-4.1b is installed by "make -i" because the error stop is avoided.
-The test is shown in the Siesta-4.1bTest.pdf [5].
+The Siesta-4.1b is installed by "make" because an error is avoided
+by giving -fallow-argument-mismatch. The test is shown in the Siesta-4.1bTest.pdf [5].
 
 
 ## References
