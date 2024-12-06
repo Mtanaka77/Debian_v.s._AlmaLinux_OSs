@@ -91,7 +91,7 @@ The arch.make file and mpifort for the MPI and OMP case was the following
 
 The Siesta-4.1b was installed by "make" because an error was to be avoided
 by giving -fallow-argument-mismatch. The test was shown in the 
-Simulatiom_AlmaLinux_ebian.pdf [5].
+Simulatiom_in_AlmaLinux_Debian.pdf [5].
 
 
 ## References
