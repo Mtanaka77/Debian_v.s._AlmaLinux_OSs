@@ -1,16 +1,16 @@
-## AlmaLinux vs Debian on Water-Ice MD and Ab-initio Siesta Codes
+## AlmaLinux vs Debian on Water-Ice MD and Ab-initio Siesta ##
 
-We have tested the linux operating systems, AlmaLinux-9 and Debian-12. 
-They run well in normal operations, but some errors in AlmaLinux while
-Debian is success as shown below.
+We test the linux operating systems, AlmaLinux-9 and Debian-12. 
+They run quite well in normal operations, but some errors appear 
+in AlmaLinux while Debian turns with success as shown below.
 
-For the successor of CentOS 7 that is terminated in May 2024, we download the
-AlmaLinux on the laptop PC. The OS is AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. 
-The actual installation time is about 15 minutes which is rebooted for new Linux windows.
+After the end of CentOS 7 terminated in May 2024, we downloaded the
+AlmaLinux-9 on the laptop PC. That OS is AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. 
+The actual installation time was 15 minutes, which was rebooted for the windows-linux machine.
 
-At the first time, we open the gcc-gfotran (Fortran) by typing # gfortran -V, 
-which is necessary on AlmaLinux-9. We also type # pip3 -V to open the python3-pip software.
-The MPI of mpich-4 is downloaded from the source site and installed.
+At the first time, we opened the gcc-gfotran (Fortran) by typing $ gfortran -V, 
+which was necessary on AlmaLinux-9. We also typed $ pip3 -V to open the python3-pip software.
+The MPI of mpich-4 was downloaded from the source site, and was installed.
 
 Debian 12 OS is installed, with choice softwares added such as gcc, make, mpich
 and fftw3. The 1500 softwares are installed at initial update. Softwares for Debian OS 
