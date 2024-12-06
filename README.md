@@ -108,4 +108,4 @@ Simulatiom_AlmaLinux_ebian.pdf [5].
 
 5. M. Matsumoto, https://github.com/vitroid/GenIce.
 
-6. This homepage PDF file of Simulation_AlmaLinux_Debian.pdf. 
+6. This overall-points PDF of Simulation_in_AlmaLinux_Debian.pdf. 
