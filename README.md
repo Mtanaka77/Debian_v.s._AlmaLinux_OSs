@@ -1,24 +1,28 @@
 ## AlmaLinux vs Debian on Water-Ice MD and Ab-initio Siesta ##
 
-We test the linux operating systems, AlmaLinux-9 and Debian-12. 
-They run quite well in normal operations, but some errors appear 
-in AlmaLinux while Debian turns with success as shown below.
+We have tested the linux operating systems of AlmaLinux-9 and Debian-12. 
+They run quite well in normal operations, but some errors will appear 
+in AlmaLinux while Debian turns with success, as shown below.
 
-After the end of CentOS 7 terminated in May 2024, we downloaded the
-AlmaLinux-9 on the laptop PC. That OS is AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. 
-The actual installation time was 15 minutes, which was rebooted for the windows-linux machine.
+### Tests of AlmaLinux vs Debian OS ###
 
-At the first time, we opened the gcc-gfotran (Fortran) by typing $ gfortran -V, 
-which was necessary on AlmaLinux-9. We also typed $ pip3 -V to open the python3-pip software.
-The MPI of mpich-4 was downloaded from the source site, and was installed.
+After CentOS 7 was terminated in May 2024, our choice was AlmaLinux or Debian OS.
+At the first choice, we downloaded the AlmaLinux-9 OS on the laptop PC, with
+AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. The installation time was 
+actually 15 minutes, which was rebooted for the windows-linux machine.
+The second choice was Debian 12 in November 2024, and similar softwares were
+installed.
 
-For Debian 12 OS, it was installed by iso USB memory. The choice softwares such as 
-gcc, make, mpich, and fftw3 were installed by one by one because they were necessary. 
-They were simply named of labels like gcc instead of gcc-12-... in AlmaLinux.
-The 1500 softwares were installed at initial update.
+At AlmaLinux OS, we opened the gcc-gfotran (Fortran) by typing $ gfortran -V, 
+which was necessary for physicists. We also typed $ pip3 -V to open the 
+python3-pip software. The MPI mpich-4 was downloaded from the source site and installed.
+For Debian 12 OS, softwares such as gcc, make, mpich, and fftw3 were installed
+but must call the softwares by one-by-one basis. But, their label names was simply called
+gcc, etc. instead of the names of gcc-12-... in the AlmaLinux case.
+The 1500 softwares were installed at the initial update.
 
 The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] were tested
-for AlmaLinux and Debian.
+for AlmaLinux and Debian OS.
 
 ### Classic MD ###
 
