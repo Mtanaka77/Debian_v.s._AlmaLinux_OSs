@@ -99,8 +99,8 @@ The arch.make file and mpifort for the MPI and OMP case was the following
   LIBS = -lgomp -L/opt/openblas/lib -lopenblas  
   LIBS += /opt/scalapack/lib/libscalapack.a  
 
-The Siesta-4.1b was installed by "make" because an error was to be avoided
-by giving -fallow-argument-mismatch. The test was shown in the 
+The Siesta-4.1b was installed by "make" with -fallow-argument-mismatch 
+argument of FFLAGS shown above. This test was shown in the 
 Simulatiom_in_AlmaLinux_Debian.pdf [5].
 
 
