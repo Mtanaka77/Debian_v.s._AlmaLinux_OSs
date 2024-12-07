@@ -21,6 +21,10 @@ but must call the softwares by one-by-one basis. But, their label names was simp
 gcc, etc. instead of the names of gcc-12-... in the AlmaLinux case.
 The 1500 softwares were installed at the initial update.
 
+One big difference was that the internet sites of any choices were opened immediately
+for Debian, while the number of internet sites were very limited by AlmaLinux 
+as closed sites including fftw3 and else.
+
 The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] were tested
 for AlmaLinux and Debian OS.
 
