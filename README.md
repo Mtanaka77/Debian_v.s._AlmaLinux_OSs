@@ -42,11 +42,13 @@ The initial state of the water and ice molecules was constructed in quaternions 
 The pip and pip3 packages were installed as usual linux systems, including for CentOS 7 
 and Debian operating systems. 
 
-On the other hand, the Windows 11 system of AlmaLinux needed GitBash using the 
-C/C++ packages of Vidual Studio Community, and then the related pip3 packages. 
+On the other hand, AlmaLinux required the Windows 11 system of GitBash and the 
+C/C++ packages of Vidual Studio Community, and the related pip3 packages as well. 
+It then required largy memory sizes like 10-20 GB ! 
 However, the AlmaLinux-9 showed strange errors at one of the packages of pairlist 
 before we should install "pip3 install genice". 
-On the other hand, Debian-12 had no difficulty in compiling "pip3 install genice".
+We noted that Debian-12 had no difficulty in compiling "pip3 install genice",
+not installed of GitBash.
 
 ### Ab-initio Siesta ###
 
