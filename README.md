@@ -48,16 +48,16 @@ It then required largy memory sizes like 10-20 GB !
 However, the AlmaLinux-9 showed strange errors at one of the packages of pairlist 
 before we should install "pip3 install genice". 
 We noted that Debian-12 had no difficulty in compiling "pip3 install genice",
-not installed of GitBash.
+not help of Windows' GitBash.
 
 ### Ab-initio Siesta ###
 
 Next at the third test, we downloaded the Siesta-4.1b code [3] and unpacked by  
-"tar -zxvf siesta-4.1b.tar.gz". Before working on the Siesta code, 
+"tar -zxvf siesta-4.1b.tar.gz". Before testing on the Siesta-4.1b code, 
 it was necessary to install the OpenBLAS and Scalapack packages.
 
 For OpenBLAS, it was straight forward after a while.
-However, the installation of Scalapack went in a different way than CentOS.
+However, the installation of Scalapack needed to go in a different way than CentOS.
 The scalapach-2.2.0 file was downloaded and expanded. At the BLACS/SRC directory, 
 one typed $ make (no option), and mpif90 was done automatically to make 
 a part of libscalapack.a. The same was done for PBLACS/SRC, but for SRC, 
