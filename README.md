@@ -16,14 +16,15 @@ installed.
 At AlmaLinux OS, we open the gcc-gfotran (Fortran) by typing $ gfortran -V, 
 which is necessary for physicists. We also type $ pip3 -V to open the 
 python3-pip software. The MPI mpich-4 is downloaded from the source site and installed.
-For Debian 12 OS, softwares such as gcc, make, mpich, and fftw3 are installed
-but must call the softwares by one-by-one basis. But, their label names is simply called
-gcc, etc. instead of the names of gcc-12-... in the AlmaLinux case.
+For Debian-12 OS, softwares such as gcc, make, mpich, and fftw3 are installed
+but must call the softwares by one-by-one basis. But, their label names is simply named 
+gcc, etc. instead of the long names of gcc-12-... in the AlmaLinux case.
 The 1500 softwares are installed at the initial update.
 
 One big difference is that the internet sites of any choices are opened immediately
-for Debian, while the number of internet sites are very limited by AlmaLinux 
-as closed sites including fftw3 and else.
+for Debian, while the number of internet closed sites including fftw3 and else
+are so many for AlmaLinux 
+.
 
 The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] are tested
 for AlmaLinux and Debian OS.
