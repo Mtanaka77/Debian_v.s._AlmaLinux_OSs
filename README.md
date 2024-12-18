@@ -53,9 +53,10 @@ not help of Windows' GitBash.
 
 ### Ab-initio Siesta ###
 
-Next at the third test, we download the Siesta-4.1b code [3] and unpack by  
-"tar -zxvf siesta-4.1b.tar.gz". Before testing on the Siesta-4.1b code, 
-it is necessary to install the OpenBLAS and Scalapack packages.
+Next at the third test, we utilize the Siesta-4.1b code of the Spainish group [4], 
+by downloading and unpacking by "tar -zxvf siesta-4.1b.tar.gz". 
+Before testing on the Siesta-4.1b code, it is necessary to install the OpenBLAS and 
+Scalapack packages in prior to the Siesta code.
 
 For OpenBLAS, it is straight forward after a while.
 However, the installation of Scalapack needs to go in a different way than CentOS.
