@@ -22,8 +22,8 @@ gcc, etc. instead of the long names of gcc-12-... in the AlmaLinux case.
 The 1500 softwares are installed at the initial update.
 
 One big difference is that the internet sites of any choices are opened immediately
-for Debian, while the number of internet closed sites including fftw3 and else
-are so many for AlmaLinux 
+for Debian, while the numbers of closed internet sites including fftw3 and similar 
+are so many in AlmaLinux 
 .
 
 The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] are tested
