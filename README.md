@@ -19,7 +19,7 @@ python3-pip software. The MPI mpich-4 is downloaded from the source site and ins
 For Debian 12 OS, softwares such as gcc, make, mpich, and fftw3 are installed
 but must call the softwares by one-by-one basis. But, their label names is simply called
 gcc, etc. instead of the names of gcc-12-... in the AlmaLinux case.
-The 1500 softwares were installed at the initial update.
+The 1500 softwares are installed at the initial update.
 
 One big difference is that the internet sites of any choices are opened immediately
 for Debian, while the number of internet sites are very limited by AlmaLinux 
@@ -59,13 +59,13 @@ it is necessary to install the OpenBLAS and Scalapack packages.
 For OpenBLAS, it is straight forward after a while.
 However, the installation of Scalapack needs to go in a different way than CentOS.
 The scalapach-2.2.0 file is downloaded and expanded. At the BLACS/SRC directory, 
-one typed $ make (no option), and mpif90 is done automatically to make 
+one type $ make (no option), and mpif90 is done automatically to make 
 a part of libscalapack.a. The same is true for PBLACS/SRC, but for SRC, 
 one must have given -fallow-argument-mismatch at the Makefile's $(FC) line, and 
-type $ make -k. The TOOLS directory is typed just like $ make. It was 10.7 MB 
+type $ make -k. The TOOLS directory is typed just like $ make. It is 10.7 MB 
 for the latest libscalapack.a. *) Test by Debian 12 OS
 
-The arch.make file and mpifort for the MPI and OMP case is the following 
+The arch.make file and mpifort for the MPI and OMP case are the followings 
 (the upper half of the arch.make):  
   .SUFFIXES:  
   .SUFFIXES: .f .F .o .c .a .f90 .F90  
@@ -103,6 +103,8 @@ The Siesta-4.1b is installed by "make" with -fallow-argument-mismatch
 argument of FFLAGS shown above. This test is shown in the 
 Simulatiom_in_AlmaLinux_Debian.pdf [5].
 
+With the aforementioned tests above, we have concluded to use Debian-12 in our
+desktop and laptop PCs.
 
 ## References
 
