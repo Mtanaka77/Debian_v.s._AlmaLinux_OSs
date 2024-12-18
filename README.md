@@ -1,10 +1,10 @@
-## AlmaLinux vs Debian on Water-Ice MD and Ab-initio Siesta ##
+## AlmaLinux v.s. Debian on Water-Ice MD and Ab-initio Siesta ##
 
 We have tested the linux operating systems of AlmaLinux-9 and Debian-12. 
 They run quite well in normal operations, but some errors will appear 
 in AlmaLinux while Debian runs with success, as shown below.
 
-### Tests of AlmaLinux vs Debian OS ###
+### Tests of AlmaLinux v.s. Debian OS's ###
 
 After CentOS 7 was terminated in May 2024, our choice is AlmaLinux or Debian OS.
 At the first choice, we download the AlmaLinux-9 OS on the laptop PC, with
@@ -120,4 +120,4 @@ desktop and laptop PCs.
 
 5. M. Matsumoto, https://github.com/vitroid/GenIce.
 
-6. This overall-points PDF of Simulation_in_AlmaLinux_Debian.pdf. 
+6. This overall-tested PDF of Simulation_in_AlmaLinux_Debian.pdf. 
