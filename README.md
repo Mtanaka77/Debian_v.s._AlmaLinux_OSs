@@ -2,70 +2,70 @@
 
 We have tested the linux operating systems of AlmaLinux-9 and Debian-12. 
 They run quite well in normal operations, but some errors will appear 
-in AlmaLinux while Debian turns with success, as shown below.
+in AlmaLinux while Debian runs with success, as shown below.
 
 ### Tests of AlmaLinux vs Debian OS ###
 
-After CentOS 7 was terminated in May 2024, our choice was AlmaLinux or Debian OS.
-At the first choice, we downloaded the AlmaLinux-9 OS on the laptop PC, with
-AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. The installation time was 
-actually 15 minutes, which was rebooted for the windows-linux machine.
-The second choice was Debian 12 in November 2024, and similar softwares were
+After CentOS 7 was terminated in May 2024, our choice is AlmaLinux or Debian OS.
+At the first choice, we download the AlmaLinux-9 OS on the laptop PC, with
+AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. The installation time is 
+actually 15 minutes, which is rebooted for the windows-linux machine.
+The second choice is Debian 12 in November 2024, and similar softwares are
 installed.
 
-At AlmaLinux OS, we opened the gcc-gfotran (Fortran) by typing $ gfortran -V, 
-which was necessary for physicists. We also typed $ pip3 -V to open the 
-python3-pip software. The MPI mpich-4 was downloaded from the source site and installed.
-For Debian 12 OS, softwares such as gcc, make, mpich, and fftw3 were installed
-but must call the softwares by one-by-one basis. But, their label names was simply called
+At AlmaLinux OS, we open the gcc-gfotran (Fortran) by typing $ gfortran -V, 
+which is necessary for physicists. We also type $ pip3 -V to open the 
+python3-pip software. The MPI mpich-4 is downloaded from the source site and installed.
+For Debian 12 OS, softwares such as gcc, make, mpich, and fftw3 are installed
+but must call the softwares by one-by-one basis. But, their label names is simply called
 gcc, etc. instead of the names of gcc-12-... in the AlmaLinux case.
 The 1500 softwares were installed at the initial update.
 
-One big difference was that the internet sites of any choices were opened immediately
-for Debian, while the number of internet sites were very limited by AlmaLinux 
+One big difference is that the internet sites of any choices are opened immediately
+for Debian, while the number of internet sites are very limited by AlmaLinux 
 as closed sites including fftw3 and else.
 
-The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] were tested
+The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] are tested
 for AlmaLinux and Debian OS.
 
 ### Classic MD ###
 
 At the first test, the three-dimensional ice and water molecules 
-@p3mtip5p03a.f03 was compiled with a parameter file parm_tip5p_D07a.h, 
+@p3mtip5p03a.f03 is compiled with a parameter file parm_tip5p_D07a.h, 
 and structure files 1cx666a.exyz and 1cx666a.q [2]. 
 The mpich-4 and fftw-3 packages must be installed before the compilation. 
 The exec run for 6 cpu at least with a start file TIP507_config.start0 
-was executed by $ mpiexec -n 6 a.out &, which run all right for AlmaLinux
+is executed by $ mpiexec -n 6 a.out &, which runs all right for AlmaLinux
 and Debian operating systems.
 
-The initial state of the water and ice molecules was constructed in quaternions [4]. 
-The pip and pip3 packages were installed as usual linux systems, including for CentOS 7 
+The initial state of the water and ice molecules is constructed in quaternions [4]. 
+The pip and pip3 packages are installed as usual linux systems, including for CentOS 7 
 and Debian operating systems. 
 
-On the other hand, AlmaLinux required the Windows 11 system of GitBash and the 
+On the other hand, AlmaLinux requires the Windows 11 system of GitBash and the 
 C/C++ packages of Vidual Studio Community, and the related pip3 packages as well. 
-It then required largy memory sizes like 10-20 GB ! 
-However, the AlmaLinux-9 showed strange errors at one of the packages of pairlist 
+It then requires largy memory sizes like 10-20 GB ! 
+However, the AlmaLinux-9 shows strange errors at one of the packages of pairlist 
 before we should install "pip3 install genice". 
-We noted that Debian-12 had no difficulty in compiling "pip3 install genice",
+We have noted that Debian-12 has no difficulty in compiling "pip3 install genice",
 not help of Windows' GitBash.
 
 ### Ab-initio Siesta ###
 
-Next at the third test, we downloaded the Siesta-4.1b code [3] and unpacked by  
+Next at the third test, we download the Siesta-4.1b code [3] and unpack by  
 "tar -zxvf siesta-4.1b.tar.gz". Before testing on the Siesta-4.1b code, 
-it was necessary to install the OpenBLAS and Scalapack packages.
+it is necessary to install the OpenBLAS and Scalapack packages.
 
-For OpenBLAS, it was straight forward after a while.
-However, the installation of Scalapack needed to go in a different way than CentOS.
-The scalapach-2.2.0 file was downloaded and expanded. At the BLACS/SRC directory, 
-one typed $ make (no option), and mpif90 was done automatically to make 
-a part of libscalapack.a. The same was done for PBLACS/SRC, but for SRC, 
+For OpenBLAS, it is straight forward after a while.
+However, the installation of Scalapack needs to go in a different way than CentOS.
+The scalapach-2.2.0 file is downloaded and expanded. At the BLACS/SRC directory, 
+one typed $ make (no option), and mpif90 is done automatically to make 
+a part of libscalapack.a. The same is true for PBLACS/SRC, but for SRC, 
 one must have given -fallow-argument-mismatch at the Makefile's $(FC) line, and 
-typed $ make -k. The TOOLS directory was typed just like $ make. It was 10.7 MB 
-for the latest libscalapack.a. *) Tested by Debian 12 OS
+type $ make -k. The TOOLS directory is typed just like $ make. It was 10.7 MB 
+for the latest libscalapack.a. *) Test by Debian 12 OS
 
-The arch.make file and mpifort for the MPI and OMP case was the following 
+The arch.make file and mpifort for the MPI and OMP case is the following 
 (the upper half of the arch.make):  
   .SUFFIXES:  
   .SUFFIXES: .f .F .o .c .a .f90 .F90  
@@ -99,8 +99,8 @@ The arch.make file and mpifort for the MPI and OMP case was the following
   LIBS = -lgomp -L/opt/openblas/lib -lopenblas  
   LIBS += /opt/scalapack/lib/libscalapack.a  
 
-The Siesta-4.1b was installed by "make" with -fallow-argument-mismatch 
-argument of FFLAGS shown above. This test was shown in the 
+The Siesta-4.1b is installed by "make" with -fallow-argument-mismatch 
+argument of FFLAGS shown above. This test is shown in the 
 Simulatiom_in_AlmaLinux_Debian.pdf [5].
 
 
