@@ -4,7 +4,7 @@ In this directory, we have tested the two linux operating systems of AlmaLinux-9
 They run quite well in normal operations, and the Debian OS runs successfully while some errors 
 will appear in the AlmaLinux OS.
 
-### Tests of Debian v.s. AlmaLinux OS's ###
+### Tests of Debian and AlmaLinux OS's ###
 
 After the CentOS 7 OS was terminated in May 2024, our choice is the AlmaLinux or Debian OS.
 The Debian OS is the well-known best OS to test the present AlmaLinux OS.
