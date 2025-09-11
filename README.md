@@ -1,6 +1,6 @@
 ## Debian v.s. AlmaLinux OS's on Water-Ice MD and Ab-initio Siesta ##
 
-We have tested the linux operating systems of AlmaLinux-9 and Debian-12. 
+In this directory, we have tested the two linux operating systems of AlmaLinux-9 and Debian-12. 
 They run quite well in normal operations, but some errors will appear 
 in AlmaLinux while Debian runs with success, as shown below.
 
