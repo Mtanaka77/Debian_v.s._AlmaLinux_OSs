@@ -7,7 +7,7 @@ will appear in the AlmaLinux OS.
 ### Tests of Debian v.s. AlmaLinux OS's ###
 
 After the CentOS 7 OS was terminated in May 2024, our choice is the AlmaLinux or Debian OS.
-The Debian OS is the well-known and best OS to test the present AlmaLinux OS.
+The Debian OS is the well-known best OS to test the present AlmaLinux OS.
 
 At the first choice, we download the AlmaLinux-9 OS on the laptop PC, with
 AlmaLinux-9.4-x86_64-dvd.iso of 10 GB memory [1]. The installation time is 
