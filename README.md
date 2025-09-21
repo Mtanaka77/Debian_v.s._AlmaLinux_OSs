@@ -2,7 +2,7 @@
 
 In this directory, we have tested the two linux operating systems of AlmaLinux-9 and Debian-12. 
 They run quite well in normal operations. The Debian OS runs quite successfully while some errors 
-have appeared in the tested AlmaLinux OS. The updated AlmaLinux-9.6 has been updated for
+appeared in the tested AlmaLinux-9.3 OS. The updated AlmaLinux-9.6 has been updated for
 usual internet connections, and the softwares of pairlist and genice. 
 
 ### Tests of Debian and AlmaLinux OS's ###
