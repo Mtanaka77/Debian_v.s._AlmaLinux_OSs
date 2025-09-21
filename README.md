@@ -25,8 +25,7 @@ The 1500 softwares are installed at the initial update.
 
 One big difference is that the internet sites of any choices are opened immediately
 for Debian, while the numbers of closed internet sites including fftw3 and similar 
-are so many in AlmaLinux 
-.
+are so many in AlmaLinux. *) This point has been updated and fixed in AlmaLinux 9.6.
 
 The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] are tested
 for AlmaLinux and Debian OS.
