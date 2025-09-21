@@ -51,7 +51,7 @@ It then requires largy memory sizes like 10-20 GB !
 However, the AlmaLinux-9 shows strange errors at one of the packages of pairlist 
 before we should install "pip3 install genice". 
 *) This point of pairlist has been fixed in AlmaLinux-9.6 with Python-3.13, and 
-genice runs O.K.
+the program genice runs OK now.
 
 We have noted that Debian-12 has no difficulty in compiling "pip3 install genice",
 not help of Windows' GitBash.
