@@ -27,7 +27,8 @@ The 1500 softwares are installed at the initial update.
 
 One big difference is that the internet sites of any choices are opened immediately
 for Debian, while the numbers of closed internet sites including fftw3 and similar 
-are so many in AlmaLinux. *) This point has been updated and fixed in AlmaLinux 9.6.
+are so many in AlmaLinux. *) This point has been updated but is closed for FFTW3 
+in AlmaLinux 9.6.
 
 The classic water and ice MD [2] and the ab-initio Siesta-4.1 code [3] are tested
 for AlmaLinux and Debian OS.
@@ -49,13 +50,11 @@ and Debian operating systems.
 On the other hand, AlmaLinux requires the Windows 11 system of GitBash and the 
 C/C++ packages of Vidual Studio Community, and the related pip3 packages as well. 
 It then requires largy memory sizes like 10-20 GB ! 
-However, the AlmaLinux-9 shows strange errors at one of the packages of pairlist 
-before we should install "pip3 install genice". 
-*) This point of pairlist has been fixed in AlmaLinux-9.6 with Python-3.13, and 
-the program genice runs OK now.
+The AlmaLinux-9.3 showed strange errors at the packages of pairlist, which is
+corrected in AlmaLinux 9.6 by python-3.13.
+But, it shows strange errors by "pip3 install genice". 
 
-We have noted that Debian-12 has no difficulty in compiling "pip3 install genice",
-not help of Windows' GitBash.
+We have noted that Debian-12 has no difficulty in compiling "pip3 install genice".
 
 ### Ab-initio Siesta ###
 
