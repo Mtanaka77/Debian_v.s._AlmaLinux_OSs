@@ -52,8 +52,8 @@ C/C++ packages of Vidual Studio Community, and the related pip3 packages as well
 It then requires largy memory sizes like 10-20 GB ! 
 The AlmaLinux-9.3 showed strange errors at the packages of pairlist, which is
 corrected in AlmaLinux 9.6 by python-3.13.
-But, it still shows strange errors at "pip3 install genice" (the author of the
-Genice package). 
+But, it still shows strange errors at "pip3 install genice" (Dr. Matsumoto, 
+the author of the Genice package). 
 
 We have noted that Debian-12 has no difficulty in compiling "pip3 install genice".
 
