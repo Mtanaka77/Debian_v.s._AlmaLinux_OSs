@@ -60,7 +60,7 @@ We have noted that Debian-12 has no difficulty in compiling "pip3 install genice
 ### Ab-initio Siesta
 
 Next at the third test, we utilize the Siesta-4.1b code of the Spainish group \[4],
-by downloading and unpacking by "tar -zxvf siesta-4.1b.tar.gz".
+by downloading and unpacking by "tar xf siesta-4.1b.tar.gz" (xf is enough for unpacking).
 Before testing on the Siesta-4.1b code, it is necessary to install the OpenBLAS and
 Scalapack packages in prior to the Siesta code.
 
