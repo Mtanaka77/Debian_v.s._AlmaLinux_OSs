@@ -74,7 +74,7 @@ one must have -fallow-argument-mismatch at the Makefile's $(FC) line and
 type $ make -i (the switch -i for ignoring mismatch signals). 
 The TOOLS directory is typed just like $ make. It is 10.7 MB
 for the latest libscalapack.a. 
-\*) Good test results of Debian 12, but serious bugs at Scalapack's igsum2d_.c family 
+\*) Good results of Debian 12, but serious bugs at Scalapack's igsum2d_.c family 
 of Debian 13 (Nov. 2025).
 
 The arch.make file and mpifort for the MPI and OMP case are the followings
