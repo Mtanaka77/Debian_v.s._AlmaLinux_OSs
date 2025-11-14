@@ -70,8 +70,9 @@ However, the installation of Scalapack needs to go in a different way than CentO
 The scalapach-2.2.0 file is downloaded and expanded. At the BLACS/SRC directory,
 one type $ make (no option), and mpif90 is done automatically to make
 a part of libscalapack.a. The same is true for PBLACS/SRC and SRC for which 
-one must have -fallow-argument-mismatch at the Makefile's $(FC) line, and
-type $ make -i. The TOOLS directory is typed just like $ make. It is 10.7 MB
+one must have -fallow-argument-mismatch at the Makefile's $(FC) line and
+type $ make -i (the switch -i for ignoring mismatch signals). 
+The TOOLS directory is typed just like $ make. It is 10.7 MB
 for the latest libscalapack.a. \*) Test by Debian 12 OS
 
 The arch.make file and mpifort for the MPI and OMP case are the followings
