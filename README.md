@@ -111,8 +111,8 @@ LDFLAGS += -L$(INSDIR)/openblas/lib -Wl,-rpath=$(INSDIR)/openblas/lib
 LIBS = -lgomp -L/opt/openblas/lib -lopenblasomp  
 LIBS += -L/opt/scalapack/lib -lscalapack
 
-The Siesta-4.1b is installed by "make" with -fallow-argument-mismatch
-argument of FFLAGS shown above. This test is shown in the
+The Siesta-4.1b is installed by "make" with the -fallow-argument-mismatch
+switch of FFLAGS shown above. This test is shown in the
 Simulatiom\_in\_AlmaLinux\_Debian.pdf \[5].
 
 With the aforementioned tests above, we have concluded to use Debian-12 in our
