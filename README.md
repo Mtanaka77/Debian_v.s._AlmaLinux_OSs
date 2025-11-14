@@ -73,7 +73,8 @@ a part of libscalapack.a. The same is true for PBLACS/SRC and SRC for which
 one must have -fallow-argument-mismatch at the Makefile's $(FC) line and
 type $ make -i (the switch -i for ignoring mismatch signals). 
 The TOOLS directory is typed just like $ make. It is 10.7 MB
-for the latest libscalapack.a. \*) Test by Debian 12 OS
+for the latest libscalapack.a. \*) Good test results by Debian 12, but 
+serious bugs at Scalapack of Debian 13 (Nov. 2025).
 
 The arch.make file and mpifort for the MPI and OMP case are the followings
 (the upper half of the arch.make):  
