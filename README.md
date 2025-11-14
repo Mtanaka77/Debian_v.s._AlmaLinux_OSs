@@ -55,7 +55,8 @@ corrected in AlmaLinux 9.6 by python-3.13.
 But, it still shows strange errors and stops at "pip3 install genice" (also in Nov. 2025). 
 
 We have noted that Debian-12 has no difficulty in compiling "pip3 install genice" 
-and also at "genice2". (Dr. Matsumoto is the author of the Genice package).
+and also at "genice2". It generates the file mh3.exyz when one goes to "genice2 CS1...".
+(Dr. Matsumoto is the author of the Genice package).
 
 ### Ab-initio Siesta
 
