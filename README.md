@@ -68,7 +68,7 @@ Scalapack packages in prior to the Siesta code.
 For OpenBLAS, it is straight forward after a while.
 However, the installation of Scalapack needs to go in a different way than CentOS.
 The scalapach-2.2.0 file is downloaded and expanded. At the BLACS/SRC directory,
-one type $ make (no option), and mpif90 is done automatically to make
+one type $ make (no option), and mpif90 is done automatically to genarate
 a part of libscalapack.a. The same is true for PBLACS/SRC and SRC for which 
 one must have -fallow-argument-mismatch at the Makefile's $(FC) line and
 type $ make -i (the switch -i for ignoring mismatch signals). 
