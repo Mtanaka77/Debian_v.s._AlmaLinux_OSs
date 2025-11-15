@@ -56,7 +56,7 @@ But, it still shows strange errors and stops at "pip3 install genice" (also Nov.
 
 We have noted that Debian-13 has no difficulty in compiling "pip3 install genice" 
 and also at "genice2" (Nov. 2025). Before installing "genice", one should do:
-$ python3 -m venv path/to/venv,
+$ python3 -m venv path/to/venv (to open path/to/venv),
 $ path/to/venv/bin/python (only to confirm),
 $ path/to/venv/bin/pip install numpy, etc., and 
 $ path/to/venv/bin/pip install genice.
