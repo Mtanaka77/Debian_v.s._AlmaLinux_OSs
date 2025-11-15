@@ -60,7 +60,7 @@ $ python3 -m venv path/to/venv (to open path/to/venv),
 $ path/to/venv/bin/python (only to confirm),
 $ path/to/venv/bin/pip install numpy, etc., and 
 $ path/to/venv/bin/pip install genice.
-It generates the file mh3.exyz when one goes to "genice2 CS1...".
+It generates the file mh3.exyz, for example, when one goes to "genice2 CS1...".
 (Dr. Matsumoto is the author of the Genice package).
 
 ### Ab-initio Siesta
