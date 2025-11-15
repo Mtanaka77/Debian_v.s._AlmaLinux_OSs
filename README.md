@@ -52,10 +52,10 @@ C/C++ packages of Vidual Studio Community, and the related pip3 packages as well
 It then requires largy memory sizes like 10-20 GB !
 The AlmaLinux-9.3 showed strange errors at the packages of pairlist, which is
 corrected in AlmaLinux 9.6 by python-3.13.
-But, it still shows strange errors and stops at "pip3 install genice" (also in Nov. 2025). 
+But, it still shows strange errors and stops at "pip3 install genice" (also Nov. 2025). 
 
-We have noted that Debian-12 has no difficulty in compiling "pip3 install genice" 
-and also at "genice2". Before installing "genice", one should do:
+We have noted that Debian-13 has no difficulty in compiling "pip3 install genice" 
+and also at "genice2" (Nov. 2025). Before installing "genice", one should do:
 $ python3 -m venv path/to/venv,
 $ path/to/venv/bin/python (only to confirm),
 $ path/to/venv/bin/pip install numpy, etc., and 
