@@ -3,7 +3,7 @@
 In this directory, we have tested the two linux operating systems of AlmaLinux-9 and Debian-13.
 They run quite well in normal operations. The Debian OS runs quite successfully while some errors
 appeared in the tested AlmaLinux-9.3 OS. The updated AlmaLinux-9.6 has been updated for
-usual internet connections except for FFTW3 by MIT and the softwares like pairlist.
+usual internet connections except for FFTW3 and the softwares like pairlist.
 However, it goes with still errors in "pip3 install genice".
 
 ### Tests of Debian and AlmaLinux OS's
