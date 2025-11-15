@@ -120,9 +120,6 @@ The Siesta-4.1b is installed by "make" with the -fallow-argument-mismatch
 switch of FFLAGS shown above. This test is shown in the
 Simulatiom\_in\_AlmaLinux\_Debian.pdf \[5].
 
-With the aforementioned tests above, we have concluded to use Debian-12 in our
-desktop and laptop PCs.
-
 ## References
 
 1. AlmaLinux Homepage https://almalinux.org/.
