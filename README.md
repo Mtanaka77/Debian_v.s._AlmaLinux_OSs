@@ -20,7 +20,7 @@ installed.
 At AlmaLinux OS, we open the gcc-gfotran (Fortran) by typing $ gfortran -V,
 which is necessary for physicists. We also type $ pip3 -V to open the
 python3-pip software. The MPI mpich-4 is downloaded from the source site and installed.
-For Debian-12 OS, softwares such as gcc, make, mpich, and fftw3 are installed
+For Debian-13 OS, softwares such as gcc, make, mpich, and fftw3 are installed
 but must call the softwares by one-by-one basis. But, their label names is simply named
 gcc, etc. instead of the long names of gcc-12-... in the AlmaLinux case.
 The 1500 softwares are installed at the initial update.
