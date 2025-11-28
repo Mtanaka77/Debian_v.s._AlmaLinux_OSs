@@ -13,7 +13,7 @@ The Debian OS is the well-known best OS to test the present AlmaLinux OS.
 At the first choice, we download the AlmaLinux-9 OS on the laptop PC, with
 AlmaLinux-9.4-x86\_64-dvd.iso of 10 GB memory \[1]. The installation time is
 actually 15 minutes, which is rebooted for the windows-linux machine.
-The second choice is Debian 12 in November 2024, and similar softwares are
+The second choice is Debian 13 in November 2025, and similar packages are
 installed.
 
 At AlmaLinux OS, we open the gcc-gfotran (Fortran) by typing $ gfortran -V,
