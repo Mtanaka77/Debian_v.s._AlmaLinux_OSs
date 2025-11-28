@@ -67,11 +67,11 @@ Before testing on the Siesta-4.1b code, it is necessary to install the OpenBLAS 
 Scalapack packages in prior to the Siesta code.
 
 For OpenBLAS, it is straight forward after a while.
-However, the installation of Scalapack needs to go in a different way.
 The scalapach-2.2.2 file is downloaded and expanded. At the top directory of SLmake.inc,
-two things "-fallow-argument-mismatch" for Fortran and "-Wno-implicit-function-declaration"
-for GCC are added. Then, the directories TOOLS, SRC, PBLAS, BLACS and BLACS/INSTALL are 
-done "$ make" automatically in these orders, to genarate libscalapack.a.  
+one should add two parameters "-fallow-argument-mismatch" for Fortran and 
+"-Wno-implicit-function-declaration" for GCC. Then, the directories TOOLS, SRC, PBLAS, 
+BLACS and BLACS/INSTALL are automatically done "$ make" in these orders, in order to 
+genarate libscalapack.a.  
 It is 11.2 MB for the latest version of Debian 13 (Nov. 2025).
 
 The arch.make file and mpifort for the MPI and OMP cases are the followings
