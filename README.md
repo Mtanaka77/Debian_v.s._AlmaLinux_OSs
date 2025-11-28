@@ -3,7 +3,7 @@
 In this directory, we have tested the two linux operating systems of Debian-13 and AlmaLinux-9.
 They run quite well in normal operations, while some errors appear in the tested AlmaLinux-9.3 OS. 
 The updated AlmaLinux-9.6 has been updated for usual internet connections except for FFTW3 
-and the softwares like pairlist. It goes with still errors in "pip3 install genice".
+and the softwares like pairlist. It goes still with errors in "pip3 install genice".
 
 ### Tests of Debian and AlmaLinux OS's
 
@@ -46,15 +46,12 @@ The initial state of the water and ice molecules is constructed in quaternions \
 The pip and pip3 packages are installed as usual linux systems, including for CentOS 7
 and Debian operating systems.
 
-On the other hand, AlmaLinux requires the Windows 11 system of GitBash and the
-C/C++ packages of Vidual Studio Community, and the related pip3 packages as well.
-It then requires largy memory sizes like 10-20 GB !
 The AlmaLinux-9.3 showed strange errors at the packages of pairlist, which is
-corrected in AlmaLinux 9.6 by python-3.13.
-But, it still shows strange errors and stops at "pip3 install genice" (also Nov. 2025). 
+corrected in AlmaLinux 9.6 by python-3.13. But, it still shows strange errors 
+and stops at "pip3 install genice" (also Nov. 2025). 
 
 We have noted that Debian-13 has no difficulty in compiling "pip3 install genice" 
-and also at "genice2" (Nov. 2025). Before installing "genice", one should do:
+and also at "genice2". Before installing "genice", one should do:
 $ python3 -m venv path/to/venv (to open path/to/venv),
 $ path/to/venv/bin/python (only to confirm),
 $ path/to/venv/bin/pip install numpy, etc., and 
@@ -70,16 +67,12 @@ Before testing on the Siesta-4.1b code, it is necessary to install the OpenBLAS 
 Scalapack packages in prior to the Siesta code.
 
 For OpenBLAS, it is straight forward after a while.
-However, the installation of Scalapack needs to go in a different way than CentOS.
-The scalapach-2.2.0 file is downloaded and expanded. At the BLACS/SRC directory,
-one type $ make (no option), and mpif90 is done automatically to genarate
-a part of libscalapack.a. The same is true for PBLACS/SRC and SRC for which 
-one must have -fallow-argument-mismatch at the Makefile's $(FC) line and
-type $ make -i (the switch -i for ignoring mismatch signals). 
-The TOOLS directory is typed just like $ make. It is 10.7 MB
-for the latest libscalapack.a. 
-\*) Good results of Debian 12, but serious errors at Scalapack's igsum2d_.c family 
-of Debian 13 (Nov. 2025).
+However, the installation of Scalapack needs to go in a different way.
+The scalapach-2.2.2 file is downloaded and expanded. At the top directory of SLmake.inc,
+two things "-fallow-argument-mismatch" for Fortran and "-Wno-implicit-function-declaration"
+for GCC are added. Then, TOOLS, SRC, PBLAS, BLACS and BLACS/INSTALL are done "$ make" 
+automatically in these orders, to genarate libscalapack.a. 
+It is 11.2 MB for the latest version of Debian 13 (Nov. 2025).
 
 The arch.make file and mpifort for the MPI and OMP case are the followings
 (the upper half of the arch.make):  
