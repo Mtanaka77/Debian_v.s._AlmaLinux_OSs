@@ -1,9 +1,9 @@
 ## Debian v.s. AlmaLinux OS
 
-In this directory, we have tested the two linux operating systems of Debian-13 and AlmaLinux-9.
-They run quite well in normal operations, while some errors appear in the tested AlmaLinux-9.3. 
-The AlmaLinux-9.6 has been corrected for usual internet connections except for FFTW3,  
-and the softwares like pairlist. But, it still goes wrong in "pip3 install genice".
+In this directory, we will test the two linux operating systems of Debian-13 and AlmaLinux-9.
+They run quite well in normal operations, while some errors appear in the tested AlmaLinux. 
+The AlmaLinux-9.6 has been corrected for internet connections except for FFTW3,  
+and the packages like pairlist. But, it is still wrong in "pip3 install genice".
 
 ### Tests of Debian and AlmaLinux OS's
 
