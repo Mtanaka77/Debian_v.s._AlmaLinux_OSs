@@ -51,28 +51,29 @@ corrected in AlmaLinux 9.6 by python-3.13. But, it still shows strange errors
 and stops at "pip3 install genice" (also Nov. 2025). 
 
 We have noted that Debian-13 has no difficulty in compiling "pip3 install genice" 
-and also at "genice2". Before installing "genice", one should do:
-$ python3 -m venv path/to/venv (to open path/to/venv),
+and also at "genice2". Before installing "genice", one should go some steps:
+$ python3 -m venv path/to/venv (in order to have path/to/venv to reach pip),
 $ path/to/venv/bin/python (only to confirm),
-$ path/to/venv/bin/pip install numpy, etc., and 
+$ path/to/venv/bin/pip install numpy, and pairlist, etc. 
 $ path/to/venv/bin/pip install genice.
+
 It generates the file mh3.exyz, for example, when one goes to "genice2 CS1...".
 (Dr. Matsumoto is the author of the Genice package).
 
 ### Ab-initio Siesta
 
-Next at the third test, we utilize the Siesta-4.1b code of the Spainish group \[4],
-by downloading and unpacking by "tar xf siesta-4.1b.tar.gz" (xf is enough for unpacking).
+Next at the third test, we utilize the Siesta-4.1b code of the Spain group \[4],
+by downloading and unpacking by "tar xf siesta-4.1b.tar.gz" (xf is now enough for unpacking).
 Before testing on the Siesta-4.1b code, it is necessary to install the OpenBLAS and
 Scalapack packages in prior to the Siesta code.
 
-For OpenBLAS, it is straight forward after a while.
+The OpenBLAS package is straight forward after about ten minutes, $ make and 
+$ make install PREFIX=/opt/openblas, for example.
 The scalapach-2.2.2 file is downloaded and expanded. At the top directory of SLmake.inc,
 one should add two parameters "-fallow-argument-mismatch" for Fortran and 
-"-Wno-implicit-function-declaration" for GCC. Then, the directories TOOLS, SRC, PBLAS, 
-BLACS and BLACS/INSTALL are automatically done "$ make" in these orders, in order to 
-genarate libscalapack.a.  
-It is 11.2 MB for the latest version of Debian 13 (Nov. 2025).
+"-Wno-implicit-function-declaration" for GCC. Then, the directories of TOOLS, SRC, PBLAS, 
+BLACS and BLACS/INSTALL are automatically executed as "$ make" in these orders, to 
+genarate libscalapack.a. It is 11.2 MB for the latest version of Debian 13 (Nov. 2025).
 
 The arch.make file and mpifort for the MPI and OMP cases are the followings
 (the upper half of the arch.make):  
