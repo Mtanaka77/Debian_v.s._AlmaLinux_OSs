@@ -1,20 +1,20 @@
 ## Debian v.s. AlmaLinux OS's
 
-In this directory, we will test the linux operating systems, Debian and AlmaLinux, where  
-the latter will replace CentOS.
+In this directory, we will test the linux operating systems, Debian and AlmaLinux, 
+where the latter will replace CentOS.
 They run quite well in normal operations, while some errors appear in the AlmaLinux. 
 The AlmaLinux-9.6 has been corrected for internet connection except for FFTW3, and the 
 pip3 packages of pairlist. But, it goes wrong in "pip3 install genice".
 
 ### Tests of Debian and AlmaLinux OS's
 
-After the CentOS 7 OS was terminated in May 2024, our choice is the AlmaLinux or Debian OS.
-The Debian OS is the well-known best operating system to test the present AlmaLinux OS.
+After the CentOS 7 OS was terminated in May 2024, our choice may be AlmaLinux or Debian.
+The Debian is the well-known best operating system to test the present AlmaLinux OS.
 
 At the first choice, we download the AlmaLinux-9 OS on the laptop PC, with
-AlmaLinux-9.4-x86\_64-dvd.iso of 10 GB memory \[1]. The installation time is
+AlmaLinux-9.6-x86\_64-dvd.iso of 10 GB memory \[1]. The installation time is
 actually 15 minutes, which is rebooted for the windows-linux machine.
-The second choice is Debian 13 in November 2025, and similar packages are
+The second choice is Debian 13 in November 2025 where similar packages are
 installed.
 
 At AlmaLinux OS, we open the gcc-gfotran (Fortran) by typing $ gfortran -V,
