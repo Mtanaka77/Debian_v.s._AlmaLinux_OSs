@@ -1,10 +1,9 @@
 ## Debian v.s. AlmaLinux OS's
 
 In this directory, we will test the linux operating systems, Debian and AlmaLinux, 
-where the latter will replace CentOS.
-They run quite well in normal operations, while some errors appear in the AlmaLinux. 
-The AlmaLinux-9.6 has been corrected for internet connection except for FFTW3, and the 
-pip3 packages of pairlist. But, it goes wrong in "pip3 install genice".
+where the latter will replace CentOS. They run quite well in Debian 13, while some errors appear 
+in the AlmaLinux. The AlmaLinux-9.6 has been updated for internet connection except for FFTW3, 
+and the pip3 packages of pairlist, but it goes wrong in "pip3 install genice".
 
 ### Tests of Debian and AlmaLinux OS's
 
