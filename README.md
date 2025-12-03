@@ -17,18 +17,17 @@ actually 15 minutes, which is rebooted for the windows-linux machine.
 The second choice is Debian 13 in November 2025 where similar packages are
 installed.
 
-At AlmaLinux OS, we open the gcc-gfotran (Fortran) by typing $ gfortran -V,
-which is necessary for physicists. We also type $ pip3 -V to open the
-python3-pip software. The MPI mpich-4 is downloaded from the source site and installed.
-For Debian-13 OS, softwares such as gcc, gfortran, mpich, and fftw3 are installed
-but must call the softwares by one-by-one basis. But, their label names is simply named
-gcc, etc. instead of the long names of gcc-12-... in the AlmaLinux case.
-The 1500 packages are installed at the initial condition.
+At AlmaLinux 9.6, we install the gcc-gfotran (Fortran) by typing $ gfortran -V,
+which is necessary for physicists. We also type $ pip3 -V to install the
+python3-pip package. The MPI mpich or openmpi is downloaded from the source site and installed.
+For Debian-13 OS, nearly 1500 packages like cpp, make are installed at the initial condition.
+The packages such as gcc, gfortran, mpich, and fftw3 are installed where they must be specified 
+by one-by-one basis. But, their package names are simply as gcc, etc., instead of the 
+very long names of gcc-12-... in the AlmaLinux case.
 
 One big difference is that the internet sites of any choices are opened immediately
 for Debian, while the numbers of closed internet sites including fftw3 and similar
-are so many in AlmaLinux. This point has been updated but is not open for FFTW3
-in AlmaLinux 9.6.
+are correctef but is not connected for the FFTW3 site in AlmaLinux 9.6.
 
 The classic water and ice MD \[2] and the ab-initio Siesta-4.1 code \[3] are tested
 for AlmaLinux and Debian OS.
