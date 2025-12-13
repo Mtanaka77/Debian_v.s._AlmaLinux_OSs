@@ -1,4 +1,4 @@
-## Debian v.s. AlmaLinux OS's
+## Use of Linux Debian Operating System
 
 In this directory, we will test the linux operating systems, Debian and AlmaLinux, 
 where the latter will replace CentOS. They run quite well in Debian 13, while some errors appear 
