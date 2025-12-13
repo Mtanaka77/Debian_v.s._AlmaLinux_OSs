@@ -3,7 +3,7 @@
 In this directory, we will use the linux operating systems Debian. We will test AlmaLinux, 
 where this replaces CentOS. They run quite well in the Debian 13, while some errors appear 
 in the AlmaLinux. The AlmaLinux-9.6 has been updated for internet connection except for FFTW3, 
-and the pip3 packages of pairlist, but it goes wrong in using "pip3 install genice".
+and the pip3 packages of pairlist, but it goes wrong in using "genice CS1 ....".
 
 ### Tests of Debian and AlmaLinux OS's
 
