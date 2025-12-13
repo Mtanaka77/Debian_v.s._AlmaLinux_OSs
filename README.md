@@ -1,9 +1,9 @@
 ## Use of Linux Debian Operating System
 
-In this directory, we will test the linux operating systems, Debian and AlmaLinux, 
-where the latter will replace CentOS. They run quite well in Debian 13, while some errors appear 
+In this directory, we will use the linux operating systems Debian. We will test AlmaLinux, 
+where this replaces CentOS. They run quite well in the Debian 13, while some errors appear 
 in the AlmaLinux. The AlmaLinux-9.6 has been updated for internet connection except for FFTW3, 
-and the pip3 packages of pairlist, but it goes wrong in "pip3 install genice".
+and the pip3 packages of pairlist, but it goes wrong in using "pip3 install genice".
 
 ### Tests of Debian and AlmaLinux OS's
 
