@@ -6,7 +6,7 @@
 !*   Author/Maintainer: Motohiko Tanaka, Ph.D., Nagoya, Japan    *
 !*                                                               *
 !*   Released by GPL-3.0 License, https://github.com/Mtanaka77/  *
-!*   Copyright(C) 2006-2024. All rights reserved.                *
+!*   Copyright(C) 2006-2025. All rights reserved.                *
 !*                                                               *
 !*   Reference                                                   * 
 !*   1) M.Tanaka, J.Comput.Phys., vol. 79, 206 (1988).           *
@@ -80,7 +80,7 @@
 !*****************************************************************
 !  Only parallel fortran 2003: 
 !     mpif90 -mcmodel=medium -fpic @p3mtip5p07a.f03  &
-!      -I/opt/fftw-3.3.10/include -L/opt/fftw-3.3.10/lib -lfftw3 
+!      -I/opt/fftw3/include -L/opt/fftw3/lib -lfftw3 
 !
 !  FT11 is opened at L.85 and closed at L.690. Afterwards it is
 !  by open/close statements when write's action is called.
