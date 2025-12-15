@@ -70,10 +70,10 @@ Scalapack packages in prior to the Siesta code.
 The OpenBLAS package is straight forward after about ten minutes, $ make and 
 $ make install PREFIX=/opt/openblas, for example.
 The scalapach-2.2.2 file is downloaded and expanded. At the top directory of SLmake.inc,
-one should add two parameters "-fallow-argument-mismatch" for Fortran and 
-"-Wno-implicit-function-declaration" for GCC. Then, the directories of TOOLS, SRC, PBLAS, 
+one should add two things "-fallow-argument-mismatch" for Fortran and 
+"-Wno-implicit-function-declaration" for gcc. Then, the directories of TOOLS, SRC, PBLAS, 
 BLACS and BLACS/INSTALL are automatically executed as "$ make" in these orders, to 
-genarate libscalapack.a. It is 11.2 MB for the latest version of Debian 13 (Nov. 2025).
+genarate libscalapack.a. It is 11.2 MB for the latest version of Debian-13 (Nov. 2025).
 
 The arch.make file and mpifort for the MPI and OMP cases are the followings
 (the upper half of the arch.make):  
