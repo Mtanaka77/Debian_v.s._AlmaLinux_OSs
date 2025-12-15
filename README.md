@@ -2,7 +2,7 @@
 
 In this directory, we will use the linux operating systems Debian. We will test AlmaLinux, 
 which replaces CentOS. The Debian-13 runs quite well, with some treatments for recent Scalapack 
-to SIESTE-4.1b compilation below.
+to Siesta-4.1b compilation below.
 In AlmaLinux, the AlmaLinux-9.6 is updated for internet connection except for FFTW3, and the pip3 
 correction for pairlist, but AlmaLinux goes wrong when "genice CS1 ...." is to be used.
 
