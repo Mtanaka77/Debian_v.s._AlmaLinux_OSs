@@ -75,8 +75,8 @@ one should add two things "-fallow-argument-mismatch" for Fortran and
 BLACS and BLACS/INSTALL are automatically executed as "$ make" in these orders, to 
 genarate libscalapack.a. It is 11.2 MB for the latest version of Debian-13 (Nov. 2025).
 
-The arch.make file and mpifort for the MPI and OMP cases are the followings
-(the upper half of the arch.make):  
+The arch.make file, mpifort and mpicc for the MPI and OMP cases are the followings
+(the upper half of the arch.make, for siesta-4.1-b4gccAM1.tar.gz):  
 .SUFFIXES:  
 .SUFFIXES: .f .F .o .c .a .f90 .F90  
 SIESTA\_ARCH = gfortran-MPI-OMP
