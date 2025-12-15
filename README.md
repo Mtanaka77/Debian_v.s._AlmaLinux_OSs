@@ -111,7 +111,7 @@ LIBS += -L/opt/scalapack/lib -lscalapack
 
 The Siesta-4.1b is installed by "make" with the -fallow-argument-mismatch
 switch of FFLAGS shown above. This test is shown in the
-Simulatiom_in_Debian_AlmaLinuxn.pdf  [5].
+Simulatiom_in_Debian-13_AlmaLinuxn-9.pdf  [5].
 
 ## References
 
